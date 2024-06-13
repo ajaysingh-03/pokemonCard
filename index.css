@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Roboto&display=swap');
+
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #555555;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    
+    font-size: 65px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.pokemon-filter-container{
+    text-align: center;
+    padding: 10px;
+}
+.search-field{
+    text-align: center;
+}
+#pokemon-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card-inner{
+    width: 200px;
+    height: 275px;
+    background-color: aqua;
+    text-align: center;
+    margin: 20px;
+    perspective: 1000px;
+    opacity: 0.95;
+}
+.card-content{
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.card-inner .card-content:hover{
+    transform: rotateY(180deg);
+}
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+}
+.card-front{
+    z-index: 2;
+    transform: rotateY(0);
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.front-image, .back-image{
+    position: relative;
+    top: 50px;
+}
+
+.id{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    background-color: whitesmoke;
+    justify-content: left;
+    color: #555555;
+}
+.name{
+    position: relative;
+    top:30px ;
+    font-size: 30px;
+}
+.type{
+    position: relative;
+    bottom: -55px;
+    background-color: #fff;
+    width: fit-content;
+    margin: auto;
+    padding: 6px;
+    border-radius: 10px;
+}
+.abilities{
+    position: relative;
+    top: 50px;
+    margin: auto;
+    font-size: 20px;
+    
+}
+#grass{
+    background-color: #9ef01a;
+}
+
+#fire{
+    background-color: #e85d04;
+}
+
+#water{
+    background-color: #56cfe1;
+}
+#bug{
+    background-color: #76c893;
+}
+#normal{
+    background-color: #fcd5ce;
+}
+#electric{
+    background-color: #023e8a;
+}
+#fighting{
+    background-color: #ca6702;
+}
+#rock{
+    background-color: #a5a58d;
+}
